@@ -46,6 +46,7 @@ for(var i = 0 ; i < squares.length ; i++){
 function clicked() {
 	if(cturn === maxtrn && this.style.backgroundColor !== pickColor){
 		msg.textContent = "You Loose..."
+		res.textContent = "Play Again"
 		return
 	}
 	else{
