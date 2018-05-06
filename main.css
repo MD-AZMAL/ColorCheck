@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #232323;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	background: #dc5539;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 3rem;
+	letter-spacing: 0.8rem;
+	line-height: 1.1;
+	padding: 1%;
+}
+
+#display {
+	font-size: 120%;
+	letter-spacing: 0.3rem;
+}
+
+#msg{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.6rem;
+	display: inline-block;
+	width: 20%;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #dc5539;
+}
+
+.square {
+	width: 30%;
+	background: red;
+	padding-bottom: 30%; /* add space, it works as height */
+	float: left;
+	margin: 1.66%;
+	border-radius: 20%;
+}
+
+#container {
+	max-width: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#menu {
+	background: white;
+	text-align: center;
+	color: black;
+}
+
+.selected {
+	background: #dc5539;
+	color: white;
+}
+
+
+button {
+	font-family: 'Lobster', cursive;
+	border: none;
+	background: none;
+	height: 100%;
+	font-weight: 400;
+	padding: 5px;
+	font-size: 2rem;
+	color: #dc5539;
+	letter-spacing: 2px;
+}
+
+button:hover {
+	background: #dc5539;
+	color: white;
+}
