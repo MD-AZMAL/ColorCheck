@@ -44,13 +44,15 @@ for(var i = 0 ; i < squares.length ; i++){
 
 
 function clicked() {
-	if(cturn === maxtrn && this.style.backgroundColor !== pickColor){
-		msg.textContent = "You Loose..."
-		res.textContent = "Play Again"
-		return
+	if(cturn === maxtrn){ 
+		if(this.style.backgroundColor !== pickColor){
+			msg.textContent = "You Loose..."
+			res.textContent = "Play Again"
+			return
+		}
 	}
 	else{
-		if(this.style.backgroundColor === pickColor){
+		if(this.style.backgroundColor === pickColor ){
 			setAllcol()
 			msg.textContent = "Correct!"
 			res.textContent = "Play Again"
