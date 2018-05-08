@@ -2,7 +2,7 @@
 A basic color picking game using javascript
 first javascript project 
 
-[Hosted here](https://colcheck.herokuapp.com)
+[Hosted here](https://rgbcheck.herokuapp.com)
 
 ## Future Improvements
 * Add custom themes
