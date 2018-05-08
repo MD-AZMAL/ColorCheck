@@ -39,6 +39,7 @@ h1 {
 	width: 30%;
 	background: red;
 	padding-bottom: 30%; /* add space, it works as height */
+	height: 35%;
 	float: left;
 	margin: 1.66%;
 	border-radius: 20%;
