@@ -1,6 +1,6 @@
 var limit = 6
 var maxtrn = 3
-var cturn = 1
+var cturn = 0
 
 var color = generateRandCol(6)
 
@@ -44,24 +44,25 @@ for(var i = 0 ; i < squares.length ; i++){
 
 
 function clicked() {
-	if(cturn === maxtrn){ 
-		if(this.style.backgroundColor !== pickColor){
-			msg.textContent = "You Loose..."
-			res.textContent = "Play Again"
-			return
-		}
+	if (this.style.backgroundColor != "rgb(35, 35, 35)") {
+		console.log("in")
+		cturn ++
 	}
-	else{
-		if(this.style.backgroundColor === pickColor ){
+	if(cturn <= maxtrn){ 
+		console.log(cturn + " " + maxtrn)
+		if(this.style.backgroundColor === pickColor){
 			setAllcol()
 			msg.textContent = "Correct!"
 			res.textContent = "Play Again"
 			h1.style.backgroundColor = this.style.backgroundColor
 		}
-		else{
-			this.style.backgroundColor = "#232323"
+		else {
+			this.style.backgroundColor = "rgb(35, 35, 35)"
 			msg.textContent = "Try Again"
-			cturn ++
+			if(cturn === maxtrn){
+				msg.textContent = "You Loose..."
+				res.textContent = "Play Again"
+			}
 		}
 	}
 }
@@ -91,7 +92,7 @@ function randCol(){
 
 function reset() {
 	color = generateRandCol(limit)
-	cturn = 1
+	cturn = 0
 	pickColor = color[Math.floor(Math.random() * color.length)]
 	display.textContent = pickColor
 	for(var i = 0 ; i < squares.length ; i++){
