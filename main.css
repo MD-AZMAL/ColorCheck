@@ -43,6 +43,7 @@ h1 {
 	float: left;
 	margin: 1.66%;
 	border-radius: 20%;
+	transition: background 0.5s;
 }
 
 #container {
@@ -73,6 +74,7 @@ button {
 	font-size: 2rem;
 	color: #dc5539;
 	letter-spacing: 2px;
+	transition: all 0.3s;
 }
 
 button:hover {
